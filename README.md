@@ -1,8 +1,9 @@
 # Welcome to my music genre classification project
-** System environment used for development**:
-* Ubuntu 18.04 (LTS x86_640
-* Anaconda3 20200218
-* Python 2.7.18
+
+* System environment used for development:
+  * Ubuntu 18.04 (LTS x86_64)
+  * Anaconda3 20200210
+  * Python 2.7.18
 
 This repository consists of development code that classifies music according to the following six genres: 
 * Classical
@@ -18,7 +19,7 @@ This repository consists of development code that classifies music according to 
   * Classification accuracy: ~50%
 
 * MFCC(Mel-Frequency Cepstral Coefficients)
-  * Classification accuracy: ~68%
+  * Classification accuracy: ~73%
 
 
 ### Choice of classifier:
@@ -47,7 +48,7 @@ $ conda activate python27
   * Get the dataset from https://canvan.skku.edu - SFC5015_41 - Week06 (exec-06-music-class.zip)
   * Extract into suitable directory: WORK_DIR (e.g., /work2/firnal/music-genre-class-f1-score/genres.backup/)
 
-* Execute "run.sh" file:
+* Execute "run.sh" file to feature task with FFT & MFCC:
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
@@ -55,7 +56,7 @@ $ conda activate python27
   * Run the "train-classify.sh" file (or run train-classify.py with Jupyter-notebook program).
 
 ## Screenshot
-The execution is result is as follows. 
+The experimental result is as follows. 
 
 ```bash
 ******USING FFT******
