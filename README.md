@@ -167,4 +167,14 @@ weighted avg       0.68      0.69      0.67       150
   * Author: Willi Richert and Luis Pedro Coelho
   * Publisher: PACKT Publishing (www.packpub.com)
   * Date: 2013
-  * Pages: 290 
+  * Pages: 290
+
+* Music genre classification using machine learning technique
+  * Date: 2018.04.03
+  * Network model: VGG-16
+  * https://www.groundai.com/project/music-genre-classification-using-machine-learning-techniques/1
+
+* Music genre classification with CNN
+  * Date: 2020.01.12
+  * Network model: Densenet,Efficientnet
+  * https://github.com/Ritesh313/Music-genre-classificartion/tree/master/MusicGenre
