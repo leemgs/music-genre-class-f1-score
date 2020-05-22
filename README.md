@@ -1,36 +1,37 @@
 # Welcome to my music genre classification project
 
-* System environment used for development:
+I established a below system environment for development:
   * Ubuntu 18.04 (LTS x86_64)
   * Anaconda3 20200210
-  * Python 2.7.18
+  * Python 2.7 (+ sklearn, numpy, plot, ...)
 
-This repository consists of development code that classifies music according to the following six genres: 
+This repository consists of development code that classifies music genre according to the following six genres: 
 * Classical
-* hiphop
-* jazz
-* metal
-* pop
-* rock
+* Hiphop
+* Jazz
+* Metal
+* Pop
+* Rock
 
 
 ### Features used: 
 * FFT (Fast Fourier Transform)
   * Classification accuracy: ~50%
 
-* MFCC(Mel-Frequency Cepstral Coefficients)
+* MFCC (Mel-Frequency Cepstral Coefficients)
   * Classification accuracy: ~73%
 
 
 ### Choice of classifier:
 
 * Logistic Regression Classifier
+
 * KNeighbors Classifier
 
 
 ## How to use:
 
-* Use (Ana)conda environment on Ubuntu 18.04 LTS (x86-64)
+* Install (Ana)conda environment on Ubuntu 18.04 LTS (x86-64)
 ```bash
 $ curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 $ bash Anaconda3-2020.02-Linux-x86_64.sh
@@ -45,10 +46,10 @@ $ conda activate python27
 ```
 
 * Download a dataset for a training: 
-  * Get the dataset from https://canvan.skku.edu - SFC5015_41 - Week06 (exec-06-music-class.zip)
-  * Extract into suitable directory: WORK_DIR (e.g., /work2/firnal/music-genre-class-f1-score/genres.backup/)
+  * Get the dataset from https://canvas.skku.edu - SFC5015_41 - Week06 (exec-06-music-class.zip)
+  * Extract into suitable directory: WORK_DIR (e.g., /work2/final/music-genre-class-f1-score/genres.backup/)
 
-* Execute "run.sh" file to feature task with FFT & MFCC:
+* Execute the "run.sh" file to do a feature task with FFT & MFCC:
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
