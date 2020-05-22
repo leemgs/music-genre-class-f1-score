@@ -50,14 +50,16 @@ $ conda activate python27
     * You can also get the dataset (*.wav) at http://opihi.cs.uvic.ca/sound/genres.tar.gz
   * Extract into suitable directory: WORK_DIR (e.g., /work2/final/music-genre-class-f1-score/genres.backup/)
 
-* Execute the "run.sh" file to do a feature task with FFT & MFCC:
+* Execute the "**run.sh**" file to do a feature task with FFT & MFCC:
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
-* Train and Classify!!! Then, calculate a precision, recall, and F1-score for performance evaluation:
-  * Run the "train-classify.sh" file (or run train-classify.py with Jupyter-notebook program).
+* Train and Classify with the "**"train-classify.sh"**" file
+  * Alternatively, you can run train-classify.ipynb if you prefer a Jupyter-notebook program (.ipynb) to a consolw program (.py).
+  * Then, calculate a precision, recall, and F1-score for performance evaluation.
 
-## Screenshot
+
+## Evaluation
 The experimental result is as follows. 
 
 ```bash
