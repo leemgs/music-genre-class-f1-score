@@ -61,6 +61,7 @@ The experimental result is as follows.
 
 ```bash
 ******USING FFT******
+(python27) invain@u1804:.../final/music-genre-class-f1-score$ ./train-classify.sh
 /var/www/invain/anaconda3/envs/python27/lib/python2.7/site-packages/sklearn/linear_model/logistic.py:433: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
   FutureWarning)
 /var/www/invain/anaconda3/envs/python27/lib/python2.7/site-packages/sklearn/linear_model/logistic.py:460: FutureWarning: Default multi_class will be changed to 'auto' in 0.22. Specify the multi_class option to silence this warning.
@@ -157,7 +158,7 @@ knn_cm:
 weighted avg       0.68      0.69      0.67       150
 
 *********************
-(python27) invain@u1804:.../final/music-genre-class-f1-score$
+
 ```
 
 ## Reference
