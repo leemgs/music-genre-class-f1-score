@@ -53,7 +53,7 @@ $ conda activate python27
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
-* Calculate a precision, recall, and F1-score:
+* Train and Classify!!! Then, calculate a precision, recall, and F1-score for performance evaluation:
   * Run the "train-classify.sh" file (or run train-classify.py with Jupyter-notebook program).
 
 ## Screenshot
