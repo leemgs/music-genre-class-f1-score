@@ -6,20 +6,12 @@ I established a below system environment for development:
   * Python 2.7 (+ sklearn, numpy, plot, ...)
 
 This repository consists of development code that classifies music genre according to the following six genres: 
-* Classical
-* Hiphop
-* Jazz
-* Metal
-* Pop
-* Rock
+* Classical, Hiphop, Jazz, Metal, Pop, and Rock
 
 
 ### Features used: 
-* FFT (Fast Fourier Transform)
-  * Classification accuracy: ~50%
-
-* MFCC (Mel-Frequency Cepstral Coefficients)
-  * Classification accuracy: ~73%
+* FFT (Fast Fourier Transform):  Classification accuracy was ~50%.
+* MFCC (Mel-Frequency Cepstral Coefficients): Classification accuracy was ~73%.
 
 
 ### Choice of classifier:
