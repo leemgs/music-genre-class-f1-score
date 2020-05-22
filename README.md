@@ -33,12 +33,12 @@ This repository consists of development code that classifies music genre accordi
 
 * Install (Ana)conda environment on Ubuntu 18.04 LTS (x86-64)
 ```bash
-$ curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
-$ bash Anaconda3-2020.02-Linux-x86_64.sh
-$ source ~/.bashrc
-$ conda create -n python27 python=2.7
-$ conda info --env
-$ conda activate python27
+invain@u1804$ curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+invain@u1804$ bash Anaconda3-2020.02-Linux-x86_64.sh
+invain@u1804$ source ~/.bashrc
+invain@u1804$ conda create -n python27 python=2.7
+invain@u1804$ conda info --env
+invain@u1804$ conda activate python27
 (python27)$ conda install jupyter notebook
 (python27)$ conda upgrade ipykernel
 (python27)$ jupyter-notebook --debug
@@ -180,4 +180,4 @@ weighted avg       0.68      0.69      0.67       150
 
 * [Music genre classification with CNN](https://github.com/Ritesh313/Music-genre-classificartion/tree/master/MusicGenre)
   * Date: 2020.01.12
-  * Network model: Densenet,Efficientnet
+  * Network model: Densenet, Efficientnet
