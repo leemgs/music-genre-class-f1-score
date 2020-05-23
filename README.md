@@ -10,16 +10,17 @@ This repository consists of development code that classifies music genre accordi
 
 
 ### Features used: 
-* FFT (Fast Fourier Transform):  Classification accuracy was ~50%.
-* MFCC (Mel-Frequency Cepstral Coefficients): Classification accuracy was ~73%.
+* FFT (Fast Fourier Transform): Classification accuracy can be possible until 50%.
+* MFCC (Mel-Frequency Cepstral Coefficients): Classification accuracy can be possible until 75%.
 
 
 ### Choice of classifier:
-
-* Logistic Regression Classifier
-
-* KNeighbors Classifier
-
+* Classical Machine Learning:
+  * Logistic Regression Classifier (Logistic)
+  * KNeighbors Classifier (KNN)
+  * Support Vector Machine (SVM)
+* Deep Leaarning:
+  * Convolution Nerual Network (CNN)
 
 ## How to use:
 
