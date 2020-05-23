@@ -3,7 +3,7 @@
 I established a below system environment for development:
   * Ubuntu 18.04 (LTS x86_64)
   * Anaconda3 20200210
-  * Python 2.7 (+ sklearn, numpy, plot, ...)
+  * Python 3.6
 
 This repository consists of development code that classifies music genre according to the following six genres: 
 * Classical, Hiphop, Jazz, Metal, Pop, and Rock
