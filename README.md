@@ -11,7 +11,7 @@ This repository consists of development code that classifies music genre accordi
 
 ### Features used: 
 * FFT (Fast Fourier Transform): Classification accuracy can be possible until 50%.
-* MFCC (Mel-Frequency Cepstral Coefficients): Classification accuracy can be possible until 75%.
+* MFCC (Mel-Frequency Cepstral Coefficients): Classification accuracy can be possible until 76%.
 
 
 ### Choice of classifier:
