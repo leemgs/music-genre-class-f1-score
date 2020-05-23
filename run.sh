@@ -5,19 +5,22 @@
 # @author Geunsik Lim <leemgs@gmail.com>
 # @date   May-22-2020
 # @Note
-#  - Experimental environment: Ubuntu 18.04 LTS (x86_64), Anaconda (=conda) 20200210, Python 2.7.18 
+#  - Experimental environment: Ubuntu 18.04 LTS (x86_64), Anaconda (=conda) 20200210, Python 3.6
 #  - Genres: classical, hiphop, jazz, metal, pop, rock
 #  - Features used: FFT (Fast Fourier Transform), MFCC(Mel-Frequency Cepstral Coefficients)
 #  - Classifier: Logistic Regression Classifier, KNeighbors Classifier
 #
-INSTALL_PACKS=0
+INSTALL_PACKS=1
 
 # Install required python packages
 
 if [[ $INSTALL_PACKS -eq 1 ]]; then
-    conda install -c anaconda scikit-learn 
-    conda install -c r r-cvst
-    conda install matplotlib
+    conda install -y -c conda-forge scipy
+    conda install -y -c contango python_speech_features
+
+    conda install -y -c anaconda scikit-learn 
+    conda install -y -c r r-cvst
+    conda install -y matplotlib
 fi
 
 echo -e "Initializing the .wav files from genres.backup folder..."
@@ -28,14 +31,14 @@ cp -arfp genres.backup/ genres.MFCC
 
 CURRENT_DIR=`pwd`
 echo -e "Creating a genres.FFT folder from genres.backup folder..."
-python2 extract-features-FFT.py  ${CURRENT_DIR}/genres.FFT/classical/  ${CURRENT_DIR}/genres.FFT/hiphop/  ${CURRENT_DIR}/genres.FFT/jazz/  ${CURRENT_DIR}/genres.FFT/metal/  ${CURRENT_DIR}/genres.FFT/pop/  ${CURRENT_DIR}/genres.FFT/rock/  
+python3 extract-features-FFT.py  ${CURRENT_DIR}/genres.FFT/classical/  ${CURRENT_DIR}/genres.FFT/hiphop/  ${CURRENT_DIR}/genres.FFT/jazz/  ${CURRENT_DIR}/genres.FFT/metal/  ${CURRENT_DIR}/genres.FFT/pop/  ${CURRENT_DIR}/genres.FFT/rock/  
 if [[ $? -ne 0 ]]; then
     echo -e "Oooops. The task (FFT) is failed. Please fix this issue."
     exit 1
 fi
 
 echo -e "Creating a genres.MFCC folder from genres.backup folder..."
-python2 extract-features-MFCC.py  ${CURRENT_DIR}/genres.MFCC/classical/  ${CURRENT_DIR}/genres.MFCC/hiphop/  ${CURRENT_DIR}/genres.MFCC/jazz/  ${CURRENT_DIR}/genres.MFCC/metal/  ${CURRENT_DIR}/genres.MFCC/pop/  ${CURRENT_DIR}/genres.MFCC/rock/  
+python3 extract-features-MFCC.py  ${CURRENT_DIR}/genres.MFCC/classical/  ${CURRENT_DIR}/genres.MFCC/hiphop/  ${CURRENT_DIR}/genres.MFCC/jazz/  ${CURRENT_DIR}/genres.MFCC/metal/  ${CURRENT_DIR}/genres.MFCC/pop/  ${CURRENT_DIR}/genres.MFCC/rock/  
 if [[ $? -ne 0 ]]; then
     echo -e "Oooops. The task (MFCC) is failed. Please fix this issue."
     exit 1
