@@ -26,14 +26,16 @@ rm -rf ./genres.MFCC
 cp -arfp genres.backup/ genres.FFT
 cp -arfp genres.backup/ genres.MFCC
 
-echo -e "Initializing the .wav files from genres.backup folder..."
-python extract-features-FFT.py  /work2/aiclass/final/music-genre-classification/genres.FFT/classical/  /work2/aiclass/final/music-genre-classification/genres.FFT/hiphop/  /work2/aiclass/final/music-genre-classification/genres.FFT/jazz/  /work2/aiclass/final/music-genre-classification/genres.FFT/metal/  /work2/aiclass/final/music-genre-classification/genres.FFT/pop/  /work2/aiclass/final/music-genre-classification/genres.FFT/rock/  
+CURRENT_DIR=`pwd`
+echo -e "Creating a genres.FFT folder from genres.backup folder..."
+python2 extract-features-FFT.py  ${CURRENT_DIR}/genres.FFT/classical/  ${CURRENT_DIR}/genres.FFT/hiphop/  ${CURRENT_DIR}/genres.FFT/jazz/  ${CURRENT_DIR}/genres.FFT/metal/  ${CURRENT_DIR}/genres.FFT/pop/  ${CURRENT_DIR}/genres.FFT/rock/  
 if [[ $? -ne 0 ]]; then
     echo -e "Oooops. The task (FFT) is failed. Please fix this issue."
     exit 1
 fi
 
-python extract-features-MFCC.py  /work2/aiclass/final/music-genre-classification/genres.MFCC/classical/  /work2/aiclass/final/music-genre-classification/genres.MFCC/hiphop/  /work2/aiclass/final/music-genre-classification/genres.MFCC/jazz/  /work2/aiclass/final/music-genre-classification/genres.MFCC/metal/  /work2/aiclass/final/music-genre-classification/genres.MFCC/pop/  /work2/aiclass/final/music-genre-classification/genres.MFCC/rock/  
+echo -e "Creating a genres.MFCC folder from genres.backup folder..."
+python2 extract-features-MFCC.py  ${CURRENT_DIR}/genres.MFCC/classical/  ${CURRENT_DIR}/genres.MFCC/hiphop/  ${CURRENT_DIR}/genres.MFCC/jazz/  ${CURRENT_DIR}/genres.MFCC/metal/  ${CURRENT_DIR}/genres.MFCC/pop/  ${CURRENT_DIR}/genres.MFCC/rock/  
 if [[ $? -ne 0 ]]; then
     echo -e "Oooops. The task (MFCC) is failed. Please fix this issue."
     exit 1
