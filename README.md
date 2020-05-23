@@ -49,8 +49,8 @@ invain@u1804$ conda activate python27
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
-* Train and Classify with the "**"train-classify.sh"**" file
-  * Alternatively, you can run train-classify.ipynb if you prefer a Jupyter-notebook program (.ipynb) to a consolw program (.py).
+* Train and Classify with the "**"train-classify.ipynb"**" file
+  * Run train-classify.ipynb with the Jupytr-notebook software.
   * Then, calculate a precision, recall, and F1-score for performance evaluation.
 
 
@@ -58,58 +58,6 @@ invain@u1804$ conda activate python27
 The experimental result is as follows. 
 
 ```bash
-******USING FFT******
-(python27) invain@u1804:.../final/music-genre-class-f1-score$ ./train-classify.sh
-/var/www/invain/anaconda3/envs/python27/lib/python2.7/site-packages/sklearn/linear_model/logistic.py:433: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/var/www/invain/anaconda3/envs/python27/lib/python2.7/site-packages/sklearn/linear_model/logistic.py:460: FutureWarning: Default multi_class will be changed to 'auto' in 0.22. Specify the multi_class option to silence this warning.
-  "this warning.", FutureWarning)
-logistic accuracy = 0.46
-logistic_cm:
-[[17  2  4  0  2  0]
- [ 4  9  0  8  1  2]
- [ 8  2 10  6  3  1]
- [ 1  8  3 15  2  0]
- [ 0  4  1  7  7  4]
- [ 1  3  0  0  4 11]]
-######## [F1-SCORE] CLASSIFICATION REPORT with Logistic Regression ########
-              precision    recall  f1-score   support
-
-   classical       0.55      0.68      0.61        25
-      hiphop       0.32      0.38      0.35        24
-        jazz       0.56      0.33      0.42        30
-       metal       0.42      0.52      0.46        29
-         pop       0.37      0.30      0.33        23
-        rock       0.61      0.58      0.59        19
-
-   micro avg       0.46      0.46      0.46       150
-   macro avg       0.47      0.46      0.46       150
-weighted avg       0.47      0.46      0.46       150
-
-knn accuracy = 0.43333333333333335
-knn_cm:
-[[23  0  1  0  0  1]
- [ 4 11  2  3  0  4]
- [18  0  8  2  1  1]
- [ 4 11  2  8  1  3]
- [ 3  3  2  0  5 10]
- [ 1  5  0  0  3 10]]
-######## [F1-SCORE] CLASSIFICATION REPORT with KNeighbors Classifier ########
-              precision    recall  f1-score   support
-
-   classical       0.55      0.68      0.61        25
-      hiphop       0.32      0.38      0.35        24
-        jazz       0.56      0.33      0.42        30
-       metal       0.42      0.52      0.46        29
-         pop       0.37      0.30      0.33        23
-        rock       0.61      0.58      0.59        19
-
-   micro avg       0.46      0.46      0.46       150
-   macro avg       0.47      0.46      0.46       150
-weighted avg       0.47      0.46      0.46       150
-
-*********************
-
 ******USING MFCC******
 logistic accuracy = 0.7333333333333334
 logistic_cm:
