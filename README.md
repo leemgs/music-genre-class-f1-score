@@ -7,7 +7,7 @@ I established a below system environment for development:
  * Python 3.6
 
 This repository consists of development code that classifies music genre according to the following six genres: 
-* Classical, Hiphop, Jazz, Metal, Pop, and Rock
+* Dataset: Classical, Hiphop, Jazz, Metal, Pop, and Rock
 
 
 ### Features used: 
@@ -44,7 +44,7 @@ invain@u1804$ conda activate python36
 ```
 
 * Download a dataset for a training: 
-  * Get the dataset from https://canvas.skku.edu - SFC5015_41 - Week06 (exec-06-music-class.zip)
+  * Get the dataset from [https://canvas.skku.edu](https://canvas.skku.edu) - **SFC5015_41** - Week06 (exec-06-music-class.zip)
     * You can also get the GTZAN dataset (*.wav) at http://opihi.cs.uvic.ca/sound/genres.tar.gz
   * Extract into suitable directory: WORK_DIR (e.g., /work2/final/music-genre-class-f1-score/genres.backup/)
 
@@ -107,6 +107,7 @@ knn_cm:
 weighted avg       0.68      0.69      0.67       150
 
 *********************
+... Omission ...
 
 ```
  
