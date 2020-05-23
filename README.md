@@ -1,17 +1,21 @@
 # Welcome to my music genre classification project
+* https://github.com/leemgs/music-genre-class-f1-score 
 
 I established a below system environment for development:
-  * Ubuntu 18.04 (LTS x86_64)
-  * Anaconda3 20200210
-  * Python 3.6
+ * Ubuntu 18.04 (LTS x86_64)
+ * Anaconda3 20200210
+ * Python 3.6
 
 This repository consists of development code that classifies music genre according to the following six genres: 
 * Classical, Hiphop, Jazz, Metal, Pop, and Rock
 
 
 ### Features used: 
-* FFT (Fast Fourier Transform): Classification accuracy can be possible until 50%.
-* MFCC (Mel-Frequency Cepstral Coefficients): Classification accuracy can be possible until 76%.
+* FFT (Fast Fourier Transform):
+  * Classification accuracy can be possible until 50%.
+
+* MFCC (Mel-Frequency Cepstral Coefficients):
+  * Classification accuracy can be possible until 78%.
 
 
 ### Choice of classifier:
@@ -19,7 +23,7 @@ This repository consists of development code that classifies music genre accordi
   * Logistic Regression Classifier (Logistic)
   * KNeighbors Classifier (KNN)
   * Support Vector Machine (SVM)
-* Deep Learning:
+* Deep Learning: (**Caution**: Use lots of Nvidia GPUs because a training time is too long.)
   * VGG-16
   * Desenet
   * Efficientnet
@@ -35,7 +39,6 @@ invain@u1804$ conda create -n python36 python=3.6
 invain@u1804$ conda info --env
 invain@u1804$ conda activate python36
 (python36)$ conda install jupyter notebook
-(python36)$ conda upgrade ipykernel
 (python36)$ jupyter-notebook --debug
 
 ```
