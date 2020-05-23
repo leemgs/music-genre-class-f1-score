@@ -19,8 +19,10 @@ This repository consists of development code that classifies music genre accordi
   * Logistic Regression Classifier (Logistic)
   * KNeighbors Classifier (KNN)
   * Support Vector Machine (SVM)
-* Deep Leaarning:
-  * Convolution Nerual Network (CNN)
+* Deep Learning:
+  * VGG-16
+  * Desenet
+  * Efficientnet
 
 ## How to use:
 
