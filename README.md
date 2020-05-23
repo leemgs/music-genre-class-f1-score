@@ -31,12 +31,12 @@ This repository consists of development code that classifies music genre accordi
 invain@u1804$ curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 invain@u1804$ bash Anaconda3-2020.02-Linux-x86_64.sh
 invain@u1804$ source ~/.bashrc
-invain@u1804$ conda create -n python27 python=2.7
+invain@u1804$ conda create -n python36 python=3.6
 invain@u1804$ conda info --env
-invain@u1804$ conda activate python27
-(python27)$ conda install jupyter notebook
-(python27)$ conda upgrade ipykernel
-(python27)$ jupyter-notebook --debug
+invain@u1804$ conda activate python36
+(python36)$ conda install jupyter notebook
+(python36)$ conda upgrade ipykernel
+(python36)$ jupyter-notebook --debug
 
 ```
 
