@@ -10,7 +10,7 @@
 #  - Features used: FFT (Fast Fourier Transform), MFCC(Mel-Frequency Cepstral Coefficients)
 #  - Classifier: Logistic Regression Classifier, KNeighbors Classifier
 #
-INSTALL_PACKS=1
+INSTALL_PACKS=0
 
 # Install required python packages
 
