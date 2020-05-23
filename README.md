@@ -42,7 +42,7 @@ invain@u1804$ conda activate python36
 
 * Download a dataset for a training: 
   * Get the dataset from https://canvas.skku.edu - SFC5015_41 - Week06 (exec-06-music-class.zip)
-    * You can also get the dataset (*.wav) at http://opihi.cs.uvic.ca/sound/genres.tar.gz
+    * You can also get the GTZAN dataset (*.wav) at http://opihi.cs.uvic.ca/sound/genres.tar.gz
   * Extract into suitable directory: WORK_DIR (e.g., /work2/final/music-genre-class-f1-score/genres.backup/)
 
 * Execute the "**run.sh**" file to do a feature task with FFT & MFCC:
