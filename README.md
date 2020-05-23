@@ -1,5 +1,5 @@
 # Welcome to my music genre classification project
-* https://github.com/leemgs/music-genre-class-f1-score 
+* https://github.com/leemgs/music-genre-class-f1-score (GitHub Repo)
 
 I established a below system environment for development:
  * Ubuntu 18.04 (LTS x86_64)
@@ -7,7 +7,7 @@ I established a below system environment for development:
  * Python 3.6
 
 This repository consists of development code that classifies music genre according to the following six genres: 
-* Dataset: Classical, Hiphop, Jazz, Metal, Pop, and Rock
+* Dataset: (1)Classical, (2)Hiphop, (3)Jazz, (4)Metal, (5)Pop, and (6)Rock
 
 
 ### Features used: 
@@ -46,14 +46,14 @@ invain@u1804$ conda activate python36
 * Download a dataset for a training: 
   * Get the dataset from [https://canvas.skku.edu](https://canvas.skku.edu) - **SFC5015_41** - Week06 (exec-06-music-class.zip)
     * You can also get the GTZAN dataset (*.wav) at http://opihi.cs.uvic.ca/sound/genres.tar.gz
-  * Extract into suitable directory: WORK_DIR (e.g., /work2/final/music-genre-class-f1-score/genres.backup/)
+  * Extract into a suitable directory: WORK_DIR (e.g., /work2/final/music-genre-class-f1-score/genres.backup/)
 
 * Execute the "**run.sh**" file to do a feature task with FFT & MFCC:
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
 * Train and Classify with the "**"train-classify.ipynb"**" file
-  * Run train-classify.ipynb with the Jupytr-notebook software.
+  * Run train-classify.ipynb with an interactive Jupyter-notebook software.
   * Then, calculate a precision, recall, and F1-score for performance evaluation.
 
 
@@ -114,11 +114,11 @@ weighted avg       0.68      0.69      0.67       150
 ## Reference
 
 * [Building Machine Learning Systems with Python](http://totoharyanto.staff.ipb.ac.id/files/2012/10/Building-Machine-Learning-Systems-with-Python-Richert-Coelho.pdf)
-  * ISBN 978-1-78216-140-0
+  * ISBN 978-1-78216-140-0 (290 pages)
   * Author: Willi Richert and Luis Pedro Coelho
   * Publisher: PACKT Publishing (www.packpub.com)
-  * Date: 2013
-  * Pages: 290
+  * Date: 2013.02.15
+
 
 * [Music genre classification using machine learning technique](https://www.groundai.com/project/music-genre-classification-using-machine-learning-techniques/1)
   * Date: 2018.04.03
