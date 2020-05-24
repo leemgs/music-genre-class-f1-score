@@ -60,6 +60,8 @@ invain@u1804$ conda activate python36
 ## Evaluation
 The experimental result is as follows. 
 
+* Classification Report with a precision, recall, and F1-score with optimized MFCC+SVM for 6 genres.
+
 ```bash
 ******USING MFCC******
                   . . . Middle Omission . . . 
@@ -88,6 +90,7 @@ weighted avg       0.79      0.78      0.78       150
 
                 ... Below Omission ...
 ```
+
 * Confusion Matrix
 ![confusion-matrix.png](confusion-matrix.png)
  
