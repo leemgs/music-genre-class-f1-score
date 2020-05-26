@@ -12,10 +12,10 @@ This repository consists of development code that classifies music genre accordi
 
 ### Features used: 
 * FFT (Fast Fourier Transform):
-  * Classification accuracy can be possible until 50%.
+  * F1-score: ~ 50%.
 
 * MFCC (Mel-Frequency Cepstral Coefficients):
-  * Classification accuracy can be possible until 78%.
+  * F1-score: ~ 78%.
 
 
 ### Choice of classifier:
@@ -24,6 +24,10 @@ This repository consists of development code that classifies music genre accordi
   * KNeighbors Classifier (KNN)
   * Support Vector Machine (SVM)
 * Deep Learning: (**Caution**: Use lots of Nvidia GPUs because a training time is too long.)
+  * FFNN
+    * F1-score: ~ 64%.
+  * CNN
+    * F1-score: ~ 83%.
   * VGG-16
   * Desenet
   * Efficientnet
