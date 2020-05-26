@@ -25,9 +25,9 @@ This repository consists of development code that classifies music genre accordi
   * Support Vector Machine (SVM)
 * Deep Learning: (**Caution**: Use lots of Nvidia GPUs because a training time is too long.)
   * FFNN
-    * F1-score: ~ 64%.
+    * F1-score: ~ 71%.
   * CNN
-    * F1-score: ~ 83%.
+    * F1-score: ~ 84%.
   * VGG-16
   * Desenet
   * Efficientnet
