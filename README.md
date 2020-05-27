@@ -3,8 +3,12 @@
 
 I established a below system environment for development:
  * Ubuntu 18.04 (LTS x86_64)
- * Anaconda3 20200210
- * Python 3.6
+ * Anaconda3 (20200210)
+   * Jupyter 1.0
+   * Python 3.6
+   * Tensorflow 2.0.1
+   * Keras 2.3.1
+
 
 This repository consists of development code that classifies music genre according to the following six genres: 
 * Dataset: (1)Classical, (2)Hiphop, (3)Jazz, (4)Metal, (5)Pop, and (6)Rock
@@ -27,10 +31,8 @@ This repository consists of development code that classifies music genre accordi
   * FFNN
     * F1-score: ~ 71%.
   * CNN
-    * F1-score: ~ 84%.
-  * VGG-16
-  * Desenet
-  * Efficientnet
+    * F1-score: ~ 85%.
+  * Pre-trained network: Desenet, Efficientnet
 
 ## How to use:
 
