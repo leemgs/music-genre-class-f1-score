@@ -19,7 +19,7 @@ This repository consists of development code that classifies music genre accordi
   * F1-score: ~ 50%.
 
 * MFCC (Mel-Frequency Cepstral Coefficients):
-  * F1-score: ~ 78%.
+  * F1-score: ~ **78%**.
 
 
 ### Choice of classifier:
@@ -31,7 +31,7 @@ This repository consists of development code that classifies music genre accordi
   * FFNN
     * F1-score: ~ 71%.
   * CNN
-    * F1-score: ~ 85%.
+    * F1-score: ~ **85%**.
   * Pre-trained network: Desenet, Efficientnet
 
 ## How to use:
