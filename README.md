@@ -1,7 +1,7 @@
 # Welcome to my music genre classification project for final exam on 산업인공지능(SFC5015_41).
-* https://github.com/leemgs/music-genre-class-f1-score (GitHub Repo)
 
 I set-up a below system environment to develop a music genres classfication software:
+* https://github.com/leemgs/music-genre-class-f1-score (GitHub Repository)
  * Ubuntu 18.04 (LTS x86_64)
  * Anaconda3 (20200210)
    * Jupyter 1.0
