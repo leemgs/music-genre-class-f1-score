@@ -63,6 +63,7 @@ invain@u1804$ conda activate python36
   * Then, calculate a precision, recall, and F1-score for performance evaluation.
 
 * Confusion Matrix
+
 ![confusion-matrix.png](confusion-matrix.png)
  
 ## Reference
