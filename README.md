@@ -68,7 +68,7 @@ invain@u1804$ conda activate python36
 
 * Confusion Matrix
 
-![confusion-matrix-ml.png](confusion-matrix-ml.png)
+![Confusion Matrix for SVM](./image/confusion-matrix-ml.png)
 
 * F1-score of SVM
 ```bash
@@ -104,7 +104,7 @@ All of the csv files are also set to be exported to this folder.
 
 * Confusion Matrix
 
-![confusion-matrix-dl.png](confusion-matrix-dl.png)
+![Confusion Matrix for CNN](./image/confusion-matrix-dl.png)
 
 * F1-score of SVM
 ```bash
