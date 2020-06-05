@@ -36,6 +36,8 @@ This repository consists of development code that classifies music genre accordi
 
 ## How to use:
 
+
+#### Set-up Evaluation Environment
 * Install (Ana)conda environment on Ubuntu 18.04 LTS (x86-64)
 ```bash
 invain@u1804$ curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
@@ -49,6 +51,7 @@ invain@u1804$ conda activate python36
 
 ```
 
+#### Clasical Machine Learning (./svm/ folder):
 * Download a dataset for a training: 
   * Get the dataset from [https://canvas.skku.edu](https://canvas.skku.edu) - **SFC5015_41** - Week06 (exec-06-music-class.zip)
     * You can also get the GTZAN dataset (*.wav) at http://opihi.cs.uvic.ca/sound/genres.tar.gz
@@ -58,14 +61,69 @@ invain@u1804$ conda activate python36
   * Run the "extract-features-FFT.py" file on each dataset sub-directory of WORK_DIR.
   * Run the "extract-features-MFCC.py" file on each dataset sub-directory of WORK_DIR.
 
-* Train and Classify with the "**"train-classify.ipynb"**" file
+* Jupyter Notebooks
+  * Train and Classify with the "**"train-classify.ipynb"**" file
   * Run train-classify.ipynb with an interactive Jupyter-notebook software.
   * Then, calculate a precision, recall, and F1-score for performance evaluation.
 
 * Confusion Matrix
 
-![confusion-matrix.png](confusion-matrix.png)
+![confusion-matrix-ml.png](confusion-matrix-ml.png)
+
+* F1-score of SVM
+```bash
+           precision    recall  f1-score   support
+
+   classical       0.92      1.00      0.96        24
+      hiphop       0.61      0.79      0.69        24
+        jazz       0.78      0.50      0.61        28
+         pop       0.90      0.86      0.88        21
+        rock       0.71      0.81      0.76        27
+       metal       0.83      0.77      0.80        26
+
+   micro avg       0.78      0.78      0.78       150
+   macro avg       0.79      0.79      0.78       150
+weighted avg       0.79      0.78      0.78       150
+
+```
  
+#### Deep Learning (./cnn/ folder):
+
+* Download a dataset for a training:
+**IMPORTANT NOTE:** the data was too large to store on GitHub.
+After downloading the data (*.wav), I combined all of the files into a single folder called "wavfiles." 
+For the code to run, this folder must be placed in the empty "data" folder. 
+All of the csv files are also set to be exported to this folder.
+ 
+* Jupyter Notebooks
+  * Data Gathering
+  * Data Cleaning
+  * Exploratory Data Analysis
+  * Convolutional Neural Network
+ 
+
+* Confusion Matrix
+
+![confusion-matrix-dl.png](confusion-matrix-dl.png)
+
+* F1-score of SVM
+```bash
+              precision    recall  f1-score   support
+
+   classical       0.84      0.80      0.82        20
+      hiphop       0.83      0.95      0.88        20
+        jazz       0.77      0.85      0.81        20
+       metal       1.00      0.95      0.97        20
+         pop       0.88      0.70      0.78        20
+        rock       0.81      0.85      0.83        20
+
+    accuracy                           0.85       120
+   macro avg       0.85      0.85      0.85       120
+weighted avg       0.85      0.85      0.85       120
+```
+
+
+
 ## Reference
 
 * [Building Machine Learning Systems with Python](http://totoharyanto.staff.ipb.ac.id/files/2012/10/Building-Machine-Learning-Systems-with-Python-Richert-Coelho.pdf)
